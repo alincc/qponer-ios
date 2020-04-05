@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A61A65792439EE0E00CD6D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A65782439EE0E00CD6D91 /* AppDelegate.swift */; };
+		A61A657D2439EE0E00CD6D91 /* SplashLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A657C2439EE0E00CD6D91 /* SplashLoadingViewController.swift */; };
+		A61A65802439EE0E00CD6D91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61A657E2439EE0E00CD6D91 /* Main.storyboard */; };
+		A61A65822439EE1000CD6D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61A65812439EE1000CD6D91 /* Assets.xcassets */; };
+		A61A65852439EE1000CD6D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61A65832439EE1000CD6D91 /* LaunchScreen.storyboard */; };
+		A61A658E2439F0A400CD6D91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A658C2439F0A400CD6D91 /* LoginViewController.swift */; };
+		A61A658F2439F0A400CD6D91 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61A658D2439F0A400CD6D91 /* LoginViewController.xib */; };
+		A61A65D7243A5D9900CD6D91 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61A65D5243A5C5800CD6D91 /* Config.plist */; };
+		B9C3F75A540C30202F7D50BE /* Pods_qpon_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73591B86F55EC305CB0E1F0B /* Pods_qpon_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CF8CA639BE6467056DDC716 /* Pods-qpon-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qpon-ios.debug.xcconfig"; path = "Target Support Files/Pods-qpon-ios/Pods-qpon-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		73591B86F55EC305CB0E1F0B /* Pods_qpon_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qpon_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC0F27CA00F17C53A441C63 /* Pods-qpon-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qpon-ios.release.xcconfig"; path = "Target Support Files/Pods-qpon-ios/Pods-qpon-ios.release.xcconfig"; sourceTree = "<group>"; };
+		8D68C7A6E35119F708DBB2C5 /* Pods-qpon-ios.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qpon-ios.staging.xcconfig"; path = "Target Support Files/Pods-qpon-ios/Pods-qpon-ios.staging.xcconfig"; sourceTree = "<group>"; };
+		A61A65752439EE0E00CD6D91 /* qpon-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "qpon-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61A65782439EE0E00CD6D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A61A657C2439EE0E00CD6D91 /* SplashLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashLoadingViewController.swift; sourceTree = "<group>"; };
+		A61A657F2439EE0E00CD6D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A61A65812439EE1000CD6D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61A65842439EE1000CD6D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A61A65862439EE1000CD6D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61A658C2439F0A400CD6D91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A61A658D2439F0A400CD6D91 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A61A65B3243A0AFE00CD6D91 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		A61A65B4243A0B1400CD6D91 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		A61A65B5243A0B1F00CD6D91 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		A61A65BC243A0B8E00CD6D91 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		A61A65BF243A0BA000CD6D91 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		A61A65C2243A0BB100CD6D91 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		A61A65D5243A5C5800CD6D91 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A61A65722439EE0E00CD6D91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C3F75A540C30202F7D50BE /* Pods_qpon_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87CB82D7A3E84150AD887925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73591B86F55EC305CB0E1F0B /* Pods_qpon_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BA97198D3738986155F1514 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CF8CA639BE6467056DDC716 /* Pods-qpon-ios.debug.xcconfig */,
+				7CC0F27CA00F17C53A441C63 /* Pods-qpon-ios.release.xcconfig */,
+				8D68C7A6E35119F708DBB2C5 /* Pods-qpon-ios.staging.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A61A656C2439EE0E00CD6D91 = {
+			isa = PBXGroup;
+			children = (
+				A61A65772439EE0E00CD6D91 /* qpon-ios */,
+				A61A65762439EE0E00CD6D91 /* Products */,
+				8BA97198D3738986155F1514 /* Pods */,
+				87CB82D7A3E84150AD887925 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A61A65762439EE0E00CD6D91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65752439EE0E00CD6D91 /* qpon-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A61A65772439EE0E00CD6D91 /* qpon-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65D3243A5C3700CD6D91 /* Generated */,
+				A61A65BA243A0B4C00CD6D91 /* Resources */,
+				A61A65782439EE0E00CD6D91 /* AppDelegate.swift */,
+				A61A658C2439F0A400CD6D91 /* LoginViewController.swift */,
+				A61A658D2439F0A400CD6D91 /* LoginViewController.xib */,
+				A61A657C2439EE0E00CD6D91 /* SplashLoadingViewController.swift */,
+				A61A657E2439EE0E00CD6D91 /* Main.storyboard */,
+				A61A65832439EE1000CD6D91 /* LaunchScreen.storyboard */,
+				A61A65862439EE1000CD6D91 /* Info.plist */,
+			);
+			path = "qpon-ios";
+			sourceTree = "<group>";
+		};
+		A61A65BA243A0B4C00CD6D91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65812439EE1000CD6D91 /* Assets.xcassets */,
+				A61A65BB243A0B6A00CD6D91 /* Development */,
+				A61A65C1243A0BA500CD6D91 /* Staging */,
+				A61A65BE243A0B9500CD6D91 /* Production */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A61A65BB243A0B6A00CD6D91 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65B3243A0AFE00CD6D91 /* Development.xcconfig */,
+				A61A65BC243A0B8E00CD6D91 /* Config.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		A61A65BE243A0B9500CD6D91 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65B4243A0B1400CD6D91 /* Production.xcconfig */,
+				A61A65BF243A0BA000CD6D91 /* Config.plist */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
+		A61A65C1243A0BA500CD6D91 /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65B5243A0B1F00CD6D91 /* Staging.xcconfig */,
+				A61A65C2243A0BB100CD6D91 /* Config.plist */,
+			);
+			path = Staging;
+			sourceTree = "<group>";
+		};
+		A61A65D3243A5C3700CD6D91 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65D4243A5C4200CD6D91 /* Config */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		A61A65D4243A5C4200CD6D91 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A61A65D5243A5C5800CD6D91 /* Config.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A61A65742439EE0E00CD6D91 /* qpon-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61A65892439EE1000CD6D91 /* Build configuration list for PBXNativeTarget "qpon-ios" */;
+			buildPhases = (
+				AEDA91A9094EC658C08D0247 /* [CP] Check Pods Manifest.lock */,
+				A61A65712439EE0E00CD6D91 /* Sources */,
+				A61A65722439EE0E00CD6D91 /* Frameworks */,
+				A61A65732439EE0E00CD6D91 /* Resources */,
+				A61A65C7243A14C400CD6D91 /* Copy Config */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "qpon-ios";
+			productName = "qpon-ios";
+			productReference = A61A65752439EE0E00CD6D91 /* qpon-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A61A656D2439EE0E00CD6D91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Bianca Hinova";
+				TargetAttributes = {
+					A61A65742439EE0E00CD6D91 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A61A65702439EE0E00CD6D91 /* Build configuration list for PBXProject "qpon-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A61A656C2439EE0E00CD6D91;
+			productRefGroup = A61A65762439EE0E00CD6D91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A61A65742439EE0E00CD6D91 /* qpon-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A61A65732439EE0E00CD6D91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61A658F2439F0A400CD6D91 /* LoginViewController.xib in Resources */,
+				A61A65852439EE1000CD6D91 /* LaunchScreen.storyboard in Resources */,
+				A61A65822439EE1000CD6D91 /* Assets.xcassets in Resources */,
+				A61A65D7243A5D9900CD6D91 /* Config.plist in Resources */,
+				A61A65802439EE0E00CD6D91 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A61A65C7243A14C400CD6D91 /* Copy Config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Config";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${SRCROOT}/qpon-ios/Generated/Config/Config.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -fp \"${SRCROOT}/qpon-ios/Resources/${XCC_CONFIG_PATH}\" \"${SRCROOT}/qpon-ios/Generated/Config/Config.plist\"\n\n";
+		};
+		AEDA91A9094EC658C08D0247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qpon-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A61A65712439EE0E00CD6D91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61A658E2439F0A400CD6D91 /* LoginViewController.swift in Sources */,
+				A61A657D2439EE0E00CD6D91 /* SplashLoadingViewController.swift in Sources */,
+				A61A65792439EE0E00CD6D91 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A61A657E2439EE0E00CD6D91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61A657F2439EE0E00CD6D91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A61A65832439EE1000CD6D91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61A65842439EE1000CD6D91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A61A65872439EE1000CD6D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61A65B3243A0AFE00CD6D91 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A61A65882439EE1000CD6D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61A65B4243A0B1400CD6D91 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A61A658A2439EE1000CD6D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF8CA639BE6467056DDC716 /* Pods-qpon-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "qpon-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qponer.qpona.qpon-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A61A658B2439EE1000CD6D91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC0F27CA00F17C53A441C63 /* Pods-qpon-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "qpon-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qponer.qpona.qpon-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A61A65B1243A0AB600CD6D91 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A61A65B5243A0B1F00CD6D91 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		A61A65B2243A0AB600CD6D91 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D68C7A6E35119F708DBB2C5 /* Pods-qpon-ios.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "qpon-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qponer.qpona.qpon-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A61A65702439EE0E00CD6D91 /* Build configuration list for PBXProject "qpon-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61A65872439EE1000CD6D91 /* Debug */,
+				A61A65B1243A0AB600CD6D91 /* Staging */,
+				A61A65882439EE1000CD6D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A61A65892439EE1000CD6D91 /* Build configuration list for PBXNativeTarget "qpon-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61A658A2439EE1000CD6D91 /* Debug */,
+				A61A65B2243A0AB600CD6D91 /* Staging */,
+				A61A658B2439EE1000CD6D91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A61A656D2439EE0E00CD6D91 /* Project object */;
+}

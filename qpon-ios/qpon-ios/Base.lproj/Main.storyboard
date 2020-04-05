@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f7F-aI-7nR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashLoadingViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="SplashLoadingViewController" id="BYZ-38-t0r" customClass="SplashLoadingViewController" customModule="qpon_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test image" translatesAutoresizingMaskIntoConstraints="NO" id="xIq-FD-BWq">
+                                <rect key="frame" x="87" y="355" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xIq-FD-BWq" secondAttribute="height" multiplier="1:1" id="5jd-pP-839"/>
+                                    <constraint firstAttribute="width" constant="240" id="6Rh-sj-rLs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xIq-FD-BWq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="i4M-W5-bYw"/>
+                            <constraint firstItem="xIq-FD-BWq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xf3-4z-V9G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qYO-9u-URU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="129"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KfA-D8-5Zn">
+            <objects>
+                <navigationController id="f7F-aI-7nR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3XT-ys-Eey">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ugi-Ar-y0h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCM-Rg-aAL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-771" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test image" width="60" height="60"/>
+    </resources>
+</document>

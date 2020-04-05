@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  qpon-ios
+//
+//  Created by Bianca Hinova on 5.04.20.
+//  Copyright © 2020 Bianca Hinova. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+XCC_BUNDLE_NAME = qpon-dev
+XCC_CONFIG_PATH = Development/Config.plist

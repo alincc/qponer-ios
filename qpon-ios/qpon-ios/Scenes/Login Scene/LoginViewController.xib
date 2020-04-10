@@ -10,9 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="qpon_ios" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndictaor" destination="GTz-ar-3Nc" id="CRy-3X-uoh"/>
                 <outlet property="loginButton" destination="sbv-gT-hNr" id="SHO-st-tEd"/>
                 <outlet property="mailTextField" destination="VMy-It-Zl6" id="Brn-9W-2VG"/>
                 <outlet property="passwordTextField" destination="ggw-1w-n26" id="WvV-oT-asH"/>
+                <outlet property="resgisterButton" destination="ru0-cI-eYz" id="Jiw-Tu-tRW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -37,13 +39,32 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbv-gT-hNr">
                     <rect key="frame" x="102" y="433" width="210" height="30"/>
                     <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="SAR-e8-Xyn"/>
+                    </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ru0-cI-eYz">
+                    <rect key="frame" x="102" y="475" width="210" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="Don't have account? Register here"/>
+                    <connections>
+                        <action selector="registerButtonTapped:" destination="-1" eventType="touchUpInside" id="obZ-oS-xxE"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="GTz-ar-3Nc">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ggw-1w-n26" firstAttribute="width" secondItem="VMy-It-Zl6" secondAttribute="width" id="LuO-ei-tQC"/>
+                <constraint firstItem="GTz-ar-3Nc" firstAttribute="centerY" secondItem="sbv-gT-hNr" secondAttribute="centerY" id="NSg-th-2cU"/>
+                <constraint firstItem="ru0-cI-eYz" firstAttribute="width" secondItem="sbv-gT-hNr" secondAttribute="width" id="Nxn-Yk-51W"/>
                 <constraint firstItem="ggw-1w-n26" firstAttribute="centerX" secondItem="VMy-It-Zl6" secondAttribute="centerX" id="OhJ-B0-Ufa"/>
+                <constraint firstItem="ru0-cI-eYz" firstAttribute="top" secondItem="sbv-gT-hNr" secondAttribute="bottom" constant="12" id="PnN-hy-Qcm"/>
+                <constraint firstItem="ru0-cI-eYz" firstAttribute="centerX" secondItem="sbv-gT-hNr" secondAttribute="centerX" id="aik-0p-j1c"/>
                 <constraint firstItem="sbv-gT-hNr" firstAttribute="width" secondItem="ggw-1w-n26" secondAttribute="width" multiplier="1.00478" id="cBW-8l-5Ms"/>
+                <constraint firstItem="GTz-ar-3Nc" firstAttribute="centerX" secondItem="sbv-gT-hNr" secondAttribute="centerX" id="ds1-Bi-ow8"/>
                 <constraint firstItem="VMy-It-Zl6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="280" id="hMR-6w-SOg"/>
                 <constraint firstItem="ggw-1w-n26" firstAttribute="top" secondItem="VMy-It-Zl6" secondAttribute="bottom" constant="8" id="pke-Pa-yto"/>
                 <constraint firstItem="VMy-It-Zl6" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qvq-nc-XcO"/>

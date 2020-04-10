@@ -14,7 +14,8 @@ class SplashLoadingViewController: UIViewController {
         super.viewDidLoad()
         // TODO: determine if user is logged in
         // navigate to login or home
-        self.navigateToLogin()
+//        self.navigateToLogin()
+        self.navigateToHome()
     }
     
     func navigateToLogin() {
@@ -24,7 +25,9 @@ class SplashLoadingViewController: UIViewController {
     }
     
     func navigateToHome() {
-        
+        let tabBarVC = HomeTabBarViewController(with: .dashboard)
+        tabBarVC.modalPresentationStyle = .fullScreen
+        self.present(tabBarVC, animated: true, completion: nil)
     }
 }
 

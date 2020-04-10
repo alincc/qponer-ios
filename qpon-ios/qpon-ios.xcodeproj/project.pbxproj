@@ -42,6 +42,12 @@
 		A64E8D622440BACD003356FE /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D602440BACD003356FE /* CardCell.xib */; };
 		A64E8D652440BCAB003356FE /* AddNewCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D632440BCAB003356FE /* AddNewCardCell.swift */; };
 		A64E8D662440BCAB003356FE /* AddNewCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D642440BCAB003356FE /* AddNewCardCell.xib */; };
+		A64E8D692440FCAF003356FE /* BusinessOwnerSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D672440FCAF003356FE /* BusinessOwnerSearchCell.swift */; };
+		A64E8D6A2440FCAF003356FE /* BusinessOwnerSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D682440FCAF003356FE /* BusinessOwnerSearchCell.xib */; };
+		A64E8D6E24411414003356FE /* VoucherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D6C24411414003356FE /* VoucherCell.swift */; };
+		A64E8D6F24411414003356FE /* VoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D6D24411414003356FE /* VoucherCell.xib */; };
+		A64E8D722441147D003356FE /* VoucherCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D702441147D003356FE /* VoucherCollectionCell.swift */; };
+		A64E8D732441147D003356FE /* VoucherCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D712441147D003356FE /* VoucherCollectionCell.xib */; };
 		A65783E02440B3A0005B9531 /* LeaderboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783DF2440B3A0005B9531 /* LeaderboardConfigurator.swift */; };
 		A65783E22440B3AA005B9531 /* LeaderBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783E12440B3AA005B9531 /* LeaderBoardRouter.swift */; };
 		A65783E42440B3B4005B9531 /* LeadreboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783E32440B3B4005B9531 /* LeadreboardInteractor.swift */; };
@@ -128,6 +134,12 @@
 		A64E8D602440BACD003356FE /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		A64E8D632440BCAB003356FE /* AddNewCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardCell.swift; sourceTree = "<group>"; };
 		A64E8D642440BCAB003356FE /* AddNewCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewCardCell.xib; sourceTree = "<group>"; };
+		A64E8D672440FCAF003356FE /* BusinessOwnerSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessOwnerSearchCell.swift; sourceTree = "<group>"; };
+		A64E8D682440FCAF003356FE /* BusinessOwnerSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessOwnerSearchCell.xib; sourceTree = "<group>"; };
+		A64E8D6C24411414003356FE /* VoucherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherCell.swift; sourceTree = "<group>"; };
+		A64E8D6D24411414003356FE /* VoucherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCell.xib; sourceTree = "<group>"; };
+		A64E8D702441147D003356FE /* VoucherCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherCollectionCell.swift; sourceTree = "<group>"; };
+		A64E8D712441147D003356FE /* VoucherCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCollectionCell.xib; sourceTree = "<group>"; };
 		A65783DF2440B3A0005B9531 /* LeaderboardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardConfigurator.swift; sourceTree = "<group>"; };
 		A65783E12440B3AA005B9531 /* LeaderBoardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRouter.swift; sourceTree = "<group>"; };
 		A65783E32440B3B4005B9531 /* LeadreboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadreboardInteractor.swift; sourceTree = "<group>"; };
@@ -360,6 +372,19 @@
 				A64E8D602440BACD003356FE /* CardCell.xib */,
 				A64E8D632440BCAB003356FE /* AddNewCardCell.swift */,
 				A64E8D642440BCAB003356FE /* AddNewCardCell.xib */,
+				A64E8D702441147D003356FE /* VoucherCollectionCell.swift */,
+				A64E8D712441147D003356FE /* VoucherCollectionCell.xib */,
+				A64E8D6C24411414003356FE /* VoucherCell.swift */,
+				A64E8D6D24411414003356FE /* VoucherCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A64E8D6B2440FCB5003356FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A64E8D672440FCAF003356FE /* BusinessOwnerSearchCell.swift */,
+				A64E8D682440FCAF003356FE /* BusinessOwnerSearchCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -404,6 +429,7 @@
 				A666744B244076A500B3C9AE /* SearchPresenter.swift */,
 				A6667429244075CF00B3C9AE /* SearchViewController.swift */,
 				A666742A244075CF00B3C9AE /* SearchViewController.xib */,
+				A64E8D6B2440FCB5003356FE /* Cells */,
 			);
 			path = "Search Screne";
 			sourceTree = "<group>";
@@ -519,15 +545,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A61A658F2439F0A400CD6D91 /* LoginViewController.xib in Resources */,
+				A64E8D6F24411414003356FE /* VoucherCell.xib in Resources */,
 				A64E8D592440B942003356FE /* ProfileInfoCell.xib in Resources */,
 				A66674272440736100B3C9AE /* HomeTabBarViewController.xib in Resources */,
 				A61A65852439EE1000CD6D91 /* LaunchScreen.storyboard in Resources */,
 				A61A65822439EE1000CD6D91 /* Assets.xcassets in Resources */,
+				A64E8D6A2440FCAF003356FE /* BusinessOwnerSearchCell.xib in Resources */,
 				A65783EA2440B4BF005B9531 /* BusinessOwnerViewController.xib in Resources */,
 				A65783F72440B5C0005B9531 /* LeaderboardCell.xib in Resources */,
 				A64E8D622440BACD003356FE /* CardCell.xib in Resources */,
 				A64E8D5E2440BA50003356FE /* CardsCollectionViewCell.xib in Resources */,
 				A61A65E5243C913900CD6D91 /* RegistrationViewController.xib in Resources */,
+				A64E8D732441147D003356FE /* VoucherCollectionCell.xib in Resources */,
 				A64E8D662440BCAB003356FE /* AddNewCardCell.xib in Resources */,
 				A6667431244075EC00B3C9AE /* ProfileViewController.xib in Resources */,
 				A633D634243F12A2005C72C3 /* TextFieldInputCell.xib in Resources */,
@@ -632,7 +661,9 @@
 				A65783F62440B5C0005B9531 /* LeaderboardCell.swift in Sources */,
 				A66674422440766200B3C9AE /* DashboardInteractor.swift in Sources */,
 				A61A65DF243BACD600CD6D91 /* LoginRouter.swift in Sources */,
+				A64E8D722441147D003356FE /* VoucherCollectionCell.swift in Sources */,
 				A61A65F5243CAF8900CD6D91 /* BussinessOwnerDto.swift in Sources */,
+				A64E8D692440FCAF003356FE /* BusinessOwnerSearchCell.swift in Sources */,
 				A64E8D612440BACD003356FE /* CardCell.swift in Sources */,
 				A65783F32440B515005B9531 /* BussinessOwnerPresenter.swift in Sources */,
 				A61A65F7243CBC6D00CD6D91 /* ConfigLoader.swift in Sources */,
@@ -658,6 +689,7 @@
 				A65783E02440B3A0005B9531 /* LeaderboardConfigurator.swift in Sources */,
 				A61A65EA243C916500CD6D91 /* RegistrationInteractor.swift in Sources */,
 				A666744C244076A500B3C9AE /* SearchPresenter.swift in Sources */,
+				A64E8D6E24411414003356FE /* VoucherCell.swift in Sources */,
 				A66674402440765900B3C9AE /* DashboardRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,7 +767,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -790,7 +822,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -887,7 +919,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

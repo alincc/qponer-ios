@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+protocol LeaderboardPresenterInput {
+   
+}
+
+protocol LeaderboardPresenterOutput {
+    
+}
+
+class LeaderboardPresenter {
+    
+    weak var view: LeaderboardViewControllerInput?
+    var interactor: LeaderboardInteractorInput!
+    var router: LeaderboardRouterInput!
+}
+
+extension LeaderboardPresenter: LeaderboardPresenterInput {
+    
+}
+
+extension LeaderboardPresenter: LeaderboardInteractorOutput {
+    
+}

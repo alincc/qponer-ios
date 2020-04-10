@@ -9,7 +9,8 @@
 import Foundation
 
 protocol ProfilePresenterInput {
-   
+    func registeredCards() -> [Int]
+    func numberOfRegisteredCards() -> Int
 }
 
 protocol ProfilePresenterOutput {
@@ -25,6 +26,13 @@ class ProfilePresenter {
 
 extension ProfilePresenter: ProfilePresenterInput {
     
+    func numberOfRegisteredCards() -> Int {
+        return self.interactor.registeredCards().count
+    }
+    
+    func registeredCards() -> [Int] {
+        return self.interactor.registeredCards()
+    }
 }
 
 extension ProfilePresenter: ProfileInteractorOutput {

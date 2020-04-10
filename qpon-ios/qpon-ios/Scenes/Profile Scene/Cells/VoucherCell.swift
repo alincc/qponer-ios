@@ -1,5 +1,5 @@
 //
-//  ProfileInfoCell.swift
+//  VoucherCell.swift
 //  qpon-ios
 //
 //  Created by Bianca Hinova on 10.04.20.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ProfileInfoCell: UICollectionViewCell {
+class VoucherCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
+
 }

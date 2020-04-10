@@ -13,4 +13,14 @@ extension UIViewController {
     func showError(title: String, message: String) {
         
     }
+    
+    func dissmissKeyboardOnTap() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        self.view.endEditing(true)
+        self.navigationController?.view.endEditing(true)
+    }
 }

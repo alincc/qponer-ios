@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ProfileInteractorInput {
-    
+    func registeredCards() -> [Int]
 }
 
 protocol ProfileInteractorOutput {
@@ -17,6 +17,10 @@ protocol ProfileInteractorOutput {
 }
 
 class ProfileInteractor: ProfileInteractorInput {
+    
     var output: ProfileInteractorOutput?
 
+    func registeredCards() -> [Int] {
+        return [1,2,3]
+    }
 }

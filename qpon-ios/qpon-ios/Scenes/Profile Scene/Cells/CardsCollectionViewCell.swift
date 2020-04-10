@@ -26,7 +26,7 @@ class CardsCollectionViewCell: UICollectionViewCell {
     }
 }
 
-extension CardsCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+extension CardsCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         //check if there are cards forst
         return 2

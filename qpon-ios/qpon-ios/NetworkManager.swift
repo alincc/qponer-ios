@@ -8,6 +8,8 @@
 
 import Foundation
 import Alamofire
+import RxSwift
+import RxCocoa
 
 enum NetworkServicePath: String {
     case login = "api/auth/login"
@@ -111,4 +113,35 @@ class NetworkManager: SessionManager {
             completion(response, error)
         }
     }
+    
+//    // MARK: - Search
+//    
+//    func urlString(searchText: String) -> URL {
+//       let encodedText = searchText.addingPercentEncoding(withAllowedCharacters:
+//                                                          CharacterSet.urlQueryAllowed)!
+//       
+//       let urlString = String(format: baseURL + "/search?name=%@", encodedText) // ??
+//       let url = URL(string: urlString)
+//       return url!
+//    }
+//    
+//    /// Parse JSON data
+//    func parse(data: Data) -> BissnessOwnerResponse {
+//      do {
+//          let decoder = JSONDecoder()
+//          let result = try decoder.decode(BissnessOwnerResponse.self, from:data)
+//          return result
+//      } catch {
+//          print("Error: \(error)")
+//          return []
+//      }
+//    }
+//    
+//    func search(search term: String) -> Observable<BissnessOwnerResponse> {
+//        let url = urlString(searchText: term)
+//        let request = URLRequest(url: url)
+//        let session = URLSession.shared
+//
+//        return session.rx.data(request: request).map { self.parse(data: $0) }
+//    }
 }

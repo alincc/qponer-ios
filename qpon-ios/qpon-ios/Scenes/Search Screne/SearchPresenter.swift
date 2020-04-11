@@ -10,6 +10,7 @@ import Foundation
 
 protocol SearchPresenterInput {
     func didSelectBusinessType(type: BusinessType)
+    func didSelectBusiness(at index: Int)
 }
 
 protocol SearchPresenterOutput {
@@ -25,8 +26,14 @@ class SearchPresenter {
 }
 
 extension SearchPresenter: SearchPresenterInput {
+    
     func didSelectBusinessType(type: BusinessType) {
         
+    }
+    
+    func didSelectBusiness(at index: Int) {
+        let business = self.interactor.businesses[0] // TODO:
+        self.router.navigateToBusinessOwnerVC(with: business)
     }
 }
 

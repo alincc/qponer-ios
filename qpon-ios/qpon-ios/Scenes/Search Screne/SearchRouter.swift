@@ -9,10 +9,15 @@
 import Foundation
 
 protocol SearchRouterInput {
-    
+    func navigateToBusinessOwnerVC(with businessOwner: BusnessOwnerResponse)
 }
 
 class SearchRouter: SearchRouterInput {
+    
     weak var viewController: SearchViewController?
-
+    
+    func navigateToBusinessOwnerVC(with businessOwner: BusnessOwnerResponse) {
+        let businessOwnerVC = BusinessOwnerViewController(nibName: "BusinessOwnerViewController", bundle: nil)
+        self.viewController?.navigationController?.pushViewController(businessOwnerVC, animated: true)
+    }
 }

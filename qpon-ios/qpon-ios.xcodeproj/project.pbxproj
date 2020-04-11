@@ -32,8 +32,6 @@
 		A61A65F7243CBC6D00CD6D91 /* ConfigLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A65F6243CBC6D00CD6D91 /* ConfigLoader.swift */; };
 		A633D633243F12A2005C72C3 /* TextFieldInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A633D631243F12A2005C72C3 /* TextFieldInputCell.swift */; };
 		A633D634243F12A2005C72C3 /* TextFieldInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A633D632243F12A2005C72C3 /* TextFieldInputCell.xib */; };
-		A633D638243F12BC005C72C3 /* ActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A633D636243F12BC005C72C3 /* ActionButtonCell.swift */; };
-		A633D639243F12BC005C72C3 /* ActionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A633D637243F12BC005C72C3 /* ActionButtonCell.xib */; };
 		A64E8D582440B942003356FE /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D562440B942003356FE /* ProfileInfoCell.swift */; };
 		A64E8D592440B942003356FE /* ProfileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D572440B942003356FE /* ProfileInfoCell.xib */; };
 		A64E8D5D2440BA50003356FE /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D5B2440BA50003356FE /* CardsCollectionViewCell.swift */; };
@@ -56,6 +54,10 @@
 		A64E8D802441EA6E003356FE /* BusinessTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D7E2441EA6E003356FE /* BusinessTypeCell.swift */; };
 		A64E8D812441EA6E003356FE /* BusinessTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D7F2441EA6E003356FE /* BusinessTypeCell.xib */; };
 		A64E8D832441F171003356FE /* BussinessTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D822441F171003356FE /* BussinessTypeViewModel.swift */; };
+		A64E8D8724426E3F003356FE /* BuyVouchersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D8524426E3F003356FE /* BuyVouchersCell.swift */; };
+		A64E8D8824426E3F003356FE /* BuyVouchersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D8624426E3F003356FE /* BuyVouchersCell.xib */; };
+		A64E8D8C24426E55003356FE /* ActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D8A24426E55003356FE /* ActionButtonCell.swift */; };
+		A64E8D8D24426E55003356FE /* ActionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D8B24426E55003356FE /* ActionButtonCell.xib */; };
 		A65783E02440B3A0005B9531 /* LeaderboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783DF2440B3A0005B9531 /* LeaderboardConfigurator.swift */; };
 		A65783E22440B3AA005B9531 /* LeaderBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783E12440B3AA005B9531 /* LeaderBoardRouter.swift */; };
 		A65783E42440B3B4005B9531 /* LeadreboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783E32440B3B4005B9531 /* LeadreboardInteractor.swift */; };
@@ -132,8 +134,6 @@
 		A61A65F6243CBC6D00CD6D91 /* ConfigLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigLoader.swift; sourceTree = "<group>"; };
 		A633D631243F12A2005C72C3 /* TextFieldInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputCell.swift; sourceTree = "<group>"; };
 		A633D632243F12A2005C72C3 /* TextFieldInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldInputCell.xib; sourceTree = "<group>"; };
-		A633D636243F12BC005C72C3 /* ActionButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCell.swift; sourceTree = "<group>"; };
-		A633D637243F12BC005C72C3 /* ActionButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
 		A64E8D562440B942003356FE /* ProfileInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCell.swift; sourceTree = "<group>"; };
 		A64E8D572440B942003356FE /* ProfileInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoCell.xib; sourceTree = "<group>"; };
 		A64E8D5B2440BA50003356FE /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +156,10 @@
 		A64E8D7E2441EA6E003356FE /* BusinessTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTypeCell.swift; sourceTree = "<group>"; };
 		A64E8D7F2441EA6E003356FE /* BusinessTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessTypeCell.xib; sourceTree = "<group>"; };
 		A64E8D822441F171003356FE /* BussinessTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessTypeViewModel.swift; sourceTree = "<group>"; };
+		A64E8D8524426E3F003356FE /* BuyVouchersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyVouchersCell.swift; sourceTree = "<group>"; };
+		A64E8D8624426E3F003356FE /* BuyVouchersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyVouchersCell.xib; sourceTree = "<group>"; };
+		A64E8D8A24426E55003356FE /* ActionButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCell.swift; sourceTree = "<group>"; };
+		A64E8D8B24426E55003356FE /* ActionButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
 		A65783DF2440B3A0005B9531 /* LeaderboardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardConfigurator.swift; sourceTree = "<group>"; };
 		A65783E12440B3AA005B9531 /* LeaderBoardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRouter.swift; sourceTree = "<group>"; };
 		A65783E32440B3B4005B9531 /* LeadreboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadreboardInteractor.swift; sourceTree = "<group>"; };
@@ -373,8 +377,6 @@
 			children = (
 				A633D631243F12A2005C72C3 /* TextFieldInputCell.swift */,
 				A633D632243F12A2005C72C3 /* TextFieldInputCell.xib */,
-				A633D636243F12BC005C72C3 /* ActionButtonCell.swift */,
-				A633D637243F12BC005C72C3 /* ActionButtonCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -421,6 +423,17 @@
 			path = "view model";
 			sourceTree = "<group>";
 		};
+		A64E8D8924426E43003356FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A64E8D8524426E3F003356FE /* BuyVouchersCell.swift */,
+				A64E8D8624426E3F003356FE /* BuyVouchersCell.xib */,
+				A64E8D8A24426E55003356FE /* ActionButtonCell.swift */,
+				A64E8D8B24426E55003356FE /* ActionButtonCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A65783EB2440B4C3005B9531 /* Business Owner Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +443,7 @@
 				A65783F22440B515005B9531 /* BussinessOwnerPresenter.swift */,
 				A65783E72440B4BF005B9531 /* BusinessOwnerViewController.swift */,
 				A65783E82440B4BF005B9531 /* BusinessOwnerViewController.xib */,
+				A64E8D8924426E43003356FE /* Cells */,
 			);
 			path = "Business Owner Scene";
 			sourceTree = "<group>";
@@ -583,7 +597,9 @@
 				A66674272440736100B3C9AE /* HomeTabBarViewController.xib in Resources */,
 				A61A65852439EE1000CD6D91 /* LaunchScreen.storyboard in Resources */,
 				A61A65822439EE1000CD6D91 /* Assets.xcassets in Resources */,
+				A64E8D8824426E3F003356FE /* BuyVouchersCell.xib in Resources */,
 				A64E8D6A2440FCAF003356FE /* BusinessOwnerSearchCell.xib in Resources */,
+				A64E8D8D24426E55003356FE /* ActionButtonCell.xib in Resources */,
 				A65783EA2440B4BF005B9531 /* BusinessOwnerViewController.xib in Resources */,
 				A65783F72440B5C0005B9531 /* LeaderboardCell.xib in Resources */,
 				A64E8D622440BACD003356FE /* CardCell.xib in Resources */,
@@ -599,7 +615,6 @@
 				A61A65D7243A5D9900CD6D91 /* Config.plist in Resources */,
 				A61A65802439EE0E00CD6D91 /* Main.storyboard in Resources */,
 				A666742C244075CF00B3C9AE /* SearchViewController.xib in Resources */,
-				A633D639243F12BC005C72C3 /* ActionButtonCell.xib in Resources */,
 				A6667436244075FF00B3C9AE /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,7 +709,6 @@
 				A65783ED2440B4F1005B9531 /* BusinessOwnerConfigurator.swift in Sources */,
 				A6667454244076D300B3C9AE /* ProfilePresenter.swift in Sources */,
 				A64E8D802441EA6E003356FE /* BusinessTypeCell.swift in Sources */,
-				A633D638243F12BC005C72C3 /* ActionButtonCell.swift in Sources */,
 				A66674262440736100B3C9AE /* HomeTabBarViewController.swift in Sources */,
 				A61A658E2439F0A400CD6D91 /* LoginViewController.swift in Sources */,
 				A64E8D7C2441EA4D003356FE /* SearchHeaderView.swift in Sources */,
@@ -712,6 +726,7 @@
 				A64E8D652440BCAB003356FE /* AddNewCardCell.swift in Sources */,
 				A61A65EC243C917200CD6D91 /* RegistrationRouter.swift in Sources */,
 				A64E8D582440B942003356FE /* ProfileInfoCell.swift in Sources */,
+				A64E8D8C24426E55003356FE /* ActionButtonCell.swift in Sources */,
 				A666742B244075CF00B3C9AE /* SearchViewController.swift in Sources */,
 				A6667450244076BF00B3C9AE /* ProfileRouter.swift in Sources */,
 				A65783E22440B3AA005B9531 /* LeaderBoardRouter.swift in Sources */,
@@ -727,6 +742,7 @@
 				A65783E92440B4BF005B9531 /* BusinessOwnerViewController.swift in Sources */,
 				A666743A2440761400B3C9AE /* LeaderboardViewController.swift in Sources */,
 				A65783E02440B3A0005B9531 /* LeaderboardConfigurator.swift in Sources */,
+				A64E8D8724426E3F003356FE /* BuyVouchersCell.swift in Sources */,
 				A61A65EA243C916500CD6D91 /* RegistrationInteractor.swift in Sources */,
 				A666744C244076A500B3C9AE /* SearchPresenter.swift in Sources */,
 				A64E8D6E24411414003356FE /* VoucherCell.swift in Sources */,

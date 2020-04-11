@@ -10,6 +10,7 @@ import Foundation
 
 
 protocol SearchInteractorInput {
+    var businesses: [BusnessOwnerResponse] { get set }
     func fetchLatestBusinesses()
     func filterBusinessByType(_ type: BusinessType)
 }
@@ -23,7 +24,7 @@ class SearchInteractor: SearchInteractorInput {
     
     var output: SearchInteractorOutput?
     
-    var businesses: [BusnessOwnerResponse] = []
+    var businesses: [BusnessOwnerResponse] = [BusnessOwnerResponse(id: 75858587, businessName: "Космос", businessDescription: "Модерна българска кухня", avatarUrl: "", type: BusinessTypeDto.RESTAURANT)]
     
     func fetchLatestBusinesses() {
         self.output?.latestBusinesses([])

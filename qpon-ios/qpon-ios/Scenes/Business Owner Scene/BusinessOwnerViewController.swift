@@ -16,6 +16,14 @@ protocol BusinessOwnerViewControllerInput: class {
 
 class BusinessOwnerViewController: UIViewController {
     
+    enum BusinessOwnerSections: Int {
+        case infoCell
+        case vouchersCell
+        case actionButtonCell
+    }
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     var presenter: BusinessOwnerPresenterInput!
 
     // MARK: - View lifecycle methods
@@ -34,9 +42,45 @@ class BusinessOwnerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        let businessOwnerCell = UINib(nibName: "BusinessOwnerSearchCell", bundle: nil)
+        let voucherCell = UINib(nibName: "BuyVouchersCell", bundle: nil)
+        let actionButtonCell = UINib(nibName: "ActionButtonCell", bundle: nil)
+        
+        self.collectionView.register(businessOwnerCell, forCellWithReuseIdentifier: "BusinessOwnerSearchCell")
+        self.collectionView.register(voucherCell, forCellWithReuseIdentifier: "BuyVouchersCell")
+        self.collectionView.register(actionButtonCell, forCellWithReuseIdentifier: "ActionButtonCell")
     }
 
+}
+
+extension BusinessOwnerViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch indexPath.section {
+        case BusinessOwnerSections.infoCell.rawValue:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BusinessOwnerSearchCell", for: indexPath) as! BusinessOwnerSearchCell
+            return cell
+        case BusinessOwnerSections.vouchersCell.rawValue:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuyVouchersCell", for: indexPath) as! BuyVouchersCell
+            return cell
+        case BusinessOwnerSections.actionButtonCell.rawValue:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActionButtonCell", for: indexPath) as! ActionButtonCell
+            return cell
+        default:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath)
+            return cell //TODO
+        }
+    }
 }
 
 extension BusinessOwnerViewController: BusinessOwnerViewControllerInput {

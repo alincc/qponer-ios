@@ -40,16 +40,19 @@ class HomeTabBarViewController: UITabBarController {
         let dashboardVC = DashboardViewController(nibName: "DashboardViewController", bundle: nil)
         let dashTabItem = UITabBarItem(title: "Начало", image: UIImage(named: "home"), tag: HomeTab.dashboard.rawValue)
         let dashboardNavVC = UINavigationController(rootViewController: dashboardVC)
+        dashboardNavVC.navigationBar.tintColor = UIColor.darkBlueColor()
         dashboardNavVC.tabBarItem = dashTabItem
 
         let searchVC = SearchViewController(nibName: "SearchViewController", bundle: nil)
         let searchTabItem = UITabBarItem(title: "Търси", image: UIImage(named: "search"), tag: HomeTab.search.rawValue)
         let searchNavVC = UINavigationController(rootViewController: searchVC)
+        searchNavVC.navigationBar.tintColor = UIColor.darkBlueColor()
         searchNavVC.tabBarItem = searchTabItem
        
         let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
         let profileTabItem = UITabBarItem(title: "Профил", image: UIImage(named: "profile"), tag: HomeTab.profile.rawValue)
         let profileNavVC = UINavigationController(rootViewController: profileVC)
+        profileNavVC.navigationBar.tintColor = UIColor.darkBlueColor()
         profileNavVC.tabBarItem = profileTabItem
         
         self.tabBar.tintColor = UIColor.primaryColor()

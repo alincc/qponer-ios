@@ -66,7 +66,9 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
         self.searchBar.placeholder = "Търсене на заведения"
         self.searchBar.delegate = self
         self.searchBar.backgroundImage = UIImage()
-        self.searchBar.searchTextField.backgroundColor = UIColor.white
+        if #available(iOS 13.0, *) {
+            self.searchBar.searchTextField.backgroundColor = UIColor.white // ok for ios 13
+        }
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
@@ -135,6 +137,10 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let businessTypeCell = collectionView.cellForItem(at: indexPath) as? BusinessTypeCell {
             businessTypeCell.selectionIndicatorView.isHidden = false
+        }
+        
+        if let businessCell = collectionView.cellForItem(at: indexPath) as? BusinessOwnerSearchCell {
+            self.presenter.didSelectBusiness(at: indexPath.item)
         }
     }
     

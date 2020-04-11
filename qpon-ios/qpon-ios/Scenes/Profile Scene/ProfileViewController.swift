@@ -84,7 +84,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         if indexPath.section == ProfileSections.cards.rawValue {
             // determine size according to cards number
             let width = collectionView.bounds.width
-            let height = CGFloat(43 + (self.presenter.numberOfRegisteredCards() * 50) + 60)
+            let height = CGFloat(43 + (self.presenter.numberOfRegisteredCards() * 50) + 80)
             return CGSize(width: width, height: height)
         }
         if indexPath.section == ProfileSections.vouchers.rawValue {

@@ -38,19 +38,21 @@ class HomeTabBarViewController: UITabBarController {
     func setup(with selectedViewController: HomeTab = .dashboard) {
 
         let dashboardVC = DashboardViewController(nibName: "DashboardViewController", bundle: nil)
-        let dashTabItem = UITabBarItem(title: "Начало", image: nil, tag: HomeTab.dashboard.rawValue)
+        let dashTabItem = UITabBarItem(title: "Начало", image: UIImage(named: "home"), tag: HomeTab.dashboard.rawValue)
         let dashboardNavVC = UINavigationController(rootViewController: dashboardVC)
         dashboardNavVC.tabBarItem = dashTabItem
 
         let searchVC = SearchViewController(nibName: "SearchViewController", bundle: nil)
-        let searchTabItem = UITabBarItem(title: "Търси", image: nil, tag: HomeTab.search.rawValue)
+        let searchTabItem = UITabBarItem(title: "Търси", image: UIImage(named: "search"), tag: HomeTab.search.rawValue)
         let searchNavVC = UINavigationController(rootViewController: searchVC)
         searchNavVC.tabBarItem = searchTabItem
        
         let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
-        let profileTabItem = UITabBarItem(title: "Профил", image: nil, tag: HomeTab.profile.rawValue)
+        let profileTabItem = UITabBarItem(title: "Профил", image: UIImage(named: "profile"), tag: HomeTab.profile.rawValue)
         let profileNavVC = UINavigationController(rootViewController: profileVC)
         profileNavVC.tabBarItem = profileTabItem
+        
+        self.tabBar.tintColor = UIColor.primaryColor()
         
         self.viewControllers = [dashboardNavVC, searchNavVC, profileNavVC]
         self.selectedViewController = dashboardNavVC

@@ -1,5 +1,5 @@
 //
-//  BussinessOwnerRouter.swift
+//  BusinessOwnerRouter.swift
 //  qpon-ios
 //
 //  Created by Bianca Hinova on 10.04.20.

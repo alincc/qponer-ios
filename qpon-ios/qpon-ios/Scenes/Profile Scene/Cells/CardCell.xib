@@ -16,7 +16,19 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="385" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="карта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAf-rn-4s5">
+                        <rect key="frame" x="84" y="14.5" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="IAf-rn-4s5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="84" id="POd-EX-evg"/>
+                <constraint firstItem="IAf-rn-4s5" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="haE-On-M1B"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="385" height="50"/>
             <point key="canvasLocation" x="35.507246376811594" y="89.732142857142847"/>

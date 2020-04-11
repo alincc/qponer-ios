@@ -9,14 +9,16 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
+extension UIViewController: UIGestureRecognizerDelegate {
     func showError(title: String, message: String) {
         
     }
     
     func dissmissKeyboardOnTap() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        tap.numberOfTapsRequired = 2
+        tap.delegate = self
+        self.view.addGestureRecognizer(tap)
     }
     
     @objc func dismissKeyboard() {

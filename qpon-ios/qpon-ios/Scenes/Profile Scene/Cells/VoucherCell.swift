@@ -10,8 +10,10 @@ import UIKit
 
 class VoucherCell: UICollectionViewCell {
 
+    @IBOutlet weak var voucherView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.voucherView.layer.cornerRadius = 10
     }
-
 }

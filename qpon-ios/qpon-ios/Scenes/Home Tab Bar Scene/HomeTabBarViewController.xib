@@ -19,12 +19,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bZ-y6-djI">
-                    <rect key="frame" x="0.0" y="779" width="414" height="83"/>
+                    <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <items>
-                        <tabBarItem selectedImage="square.and.arrow.up" catalog="system" systemItem="topRated" id="FfF-jx-t2Y"/>
-                        <tabBarItem systemItem="search" id="cZ1-7b-2Dj"/>
-                        <tabBarItem title="" systemItem="contacts" id="4YY-bf-VtU"/>
+                        <tabBarItem title=" Начало" image="house" catalog="system" springLoaded="YES" id="FfF-jx-t2Y"/>
+                        <tabBarItem title="Търсене" image="magnifyingglass" catalog="system" id="cZ1-7b-2Dj"/>
+                        <tabBarItem title="Профил" image="person.circle" catalog="system" id="4YY-bf-VtU"/>
                     </items>
                 </tabBar>
             </subviews>
@@ -39,6 +39,8 @@
         </view>
     </objects>
     <resources>
-        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

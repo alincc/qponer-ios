@@ -9,7 +9,7 @@
 import Foundation
 
 protocol SearchPresenterInput {
-   
+    func didSelectBusinessType(type: BusinessType)
 }
 
 protocol SearchPresenterOutput {
@@ -21,12 +21,21 @@ class SearchPresenter {
     weak var view: SearchViewControllerInput?
     var interactor: SearchInteractorInput!
     var router: SearchRouterInput!
+    var businesses: [BusnessOwnerResponse] = []
 }
 
 extension SearchPresenter: SearchPresenterInput {
-    
+    func didSelectBusinessType(type: BusinessType) {
+        
+    }
 }
 
 extension SearchPresenter: SearchInteractorOutput {
+    func latestBusinesses(_ latest: [BusnessOwnerResponse]) {
+        self.businesses = latest
+    }
     
+    func businessesForType(_ type: BusinessType, businesses: [BusnessOwnerResponse]) {
+        self.businesses = businesses
+    }
 }

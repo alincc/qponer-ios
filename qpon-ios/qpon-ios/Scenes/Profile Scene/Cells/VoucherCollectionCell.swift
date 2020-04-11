@@ -23,12 +23,12 @@ class VoucherCollectionCell: UICollectionViewCell {
         self.collectionView.delegate = self
         let cellNib = UINib(nibName: "VoucherCell", bundle: nil)
         self.collectionView.register(cellNib, forCellWithReuseIdentifier: "VoucherCell")
-        // Initialization code
     }
 
 }
 
-extension VoucherCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension VoucherCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
@@ -36,5 +36,10 @@ extension VoucherCollectionCell: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VoucherCell", for: indexPath) as! VoucherCell
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.height * 1.7
+        return CGSize(width: width, height: collectionView.bounds.height)
     }
 }

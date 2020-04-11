@@ -39,6 +39,6 @@ class LoginResponse: Codable {
 }
 
 enum UserType: String, Codable {
-    case BUSSINESS_OWNER
+    case BUSINESS_OWNER
     case CONTRIBUTOR
 }

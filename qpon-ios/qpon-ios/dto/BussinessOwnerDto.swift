@@ -1,5 +1,5 @@
 //
-//  BussinessOwnerDto.swift
+//  BusinessOwnerDto.swift
 //  qpon-ios
 //
 //  Created by Bianca Hinova on 7.04.20.
@@ -8,17 +8,18 @@
 
 import Foundation
 
-struct BissnessOwnerResponse: Codable {
+struct BusnessOwnerResponse: Codable {
     var id: Int64
-    var bussinessName: String
-    var bussinessDescription: String
+    var businessName: String
+    var businessDescription: String
     var avatarUrl: String?
-    var type: BussinessTypeDto
+    var type: BusinessTypeDto
 }
 
-enum BussinessTypeDto: String, Codable {
+enum BusinessTypeDto: String, Codable {
     case RESTAURANT
     case BAR
+    case CAFE //?
     case DISCO
 }
 

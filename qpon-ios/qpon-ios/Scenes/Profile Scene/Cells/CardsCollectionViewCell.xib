@@ -11,10 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardsCollectionViewCell" id="gTV-IL-0wX" customClass="CardsCollectionViewCell" customModule="qpon_ios" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="275" height="201"/>
+            <rect key="frame" x="0.0" y="0.0" width="275" height="273"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="275" height="201"/>
+                <rect key="frame" x="0.0" y="0.0" width="275" height="273"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Карти" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwP-XS-PZ6">
@@ -24,7 +24,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9e9-m6-uqF">
-                        <rect key="frame" x="0.0" y="42" width="275" height="159"/>
+                        <rect key="frame" x="0.0" y="42" width="275" height="231"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eRj-Ly-HP8">
                             <size key="itemSize" width="50" height="50"/>
@@ -42,12 +42,13 @@
                 <constraint firstAttribute="trailing" secondItem="9e9-m6-uqF" secondAttribute="trailing" id="IQF-EM-h9Q"/>
                 <constraint firstItem="9e9-m6-uqF" firstAttribute="top" secondItem="RwP-XS-PZ6" secondAttribute="bottom" constant="8" id="cBU-Xo-KoJ"/>
                 <constraint firstItem="9e9-m6-uqF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mbJ-5u-iox"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="RwP-XS-PZ6" secondAttribute="top" constant="31" id="mtT-Hh-X7Q"/>
+                <constraint firstAttribute="top" secondItem="RwP-XS-PZ6" secondAttribute="top" constant="-13" id="mtT-Hh-X7Q"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="275" height="201"/>
             <connections>
                 <outlet property="collectionView" destination="9e9-m6-uqF" id="1jl-9v-xBe"/>
+                <outlet property="titleLabel" destination="RwP-XS-PZ6" id="Lc0-oz-0hy"/>
             </connections>
             <point key="canvasLocation" x="89.130434782608702" y="106.13839285714285"/>
         </collectionViewCell>

@@ -8,11 +8,25 @@
 
 import UIKit
 
+protocol ActionButtonCellDelegate {
+    func didTapActionButton(_ sender: ActionButtonCell)
+}
+
 class ActionButtonCell: UICollectionViewCell {
 
+    @IBOutlet weak var button: UIButton!
+    
+    var delegate: ActionButtonCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.button.layer.cornerRadius = 8
+        self.button.backgroundColor = UIColor.darkBlueColor()
         // Initialization code
     }
-
+    
+    @IBAction func didTapButton(_ sender: Any) {
+        self.delegate?.didTapActionButton(self)
+    }
+    
 }

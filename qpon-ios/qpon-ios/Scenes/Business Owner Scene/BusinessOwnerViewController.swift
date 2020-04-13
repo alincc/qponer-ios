@@ -14,7 +14,7 @@ protocol BusinessOwnerViewControllerInput: class {
 }
 
 
-class BusinessOwnerViewController: UIViewController {
+class BusinessOwnerViewController: UIViewController, ActionButtonCellDelegate {
     
     enum BusinessOwnerSections: Int {
         case infoCell
@@ -52,10 +52,16 @@ class BusinessOwnerViewController: UIViewController {
         self.collectionView.register(voucherCell, forCellWithReuseIdentifier: "BuyVouchersCell")
         self.collectionView.register(actionButtonCell, forCellWithReuseIdentifier: "ActionButtonCell")
     }
+    
+    // MARK: - ActionButtonCellDelegate
+    
+    func didTapActionButton(_ sender: ActionButtonCell) {
+        
+    }
 
 }
 
-extension BusinessOwnerViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension BusinessOwnerViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 3
@@ -75,10 +81,28 @@ extension BusinessOwnerViewController: UICollectionViewDataSource, UICollectionV
             return cell
         case BusinessOwnerSections.actionButtonCell.rawValue:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActionButtonCell", for: indexPath) as! ActionButtonCell
+            cell.delegate = self
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath)
             return cell //TODO
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        switch indexPath.section {
+        case BusinessOwnerSections.infoCell.rawValue:
+            let width = collectionView.bounds.width
+            let height = CGFloat(155)
+            return CGSize(width: width, height: height)
+        case BusinessOwnerSections.vouchersCell.rawValue:
+            let voucherCellWidth = collectionView.bounds.width / 2
+            let height = ((voucherCellWidth / VoucherCell.aspectRatio) * 2) + 56
+            return CGSize(width: collectionView.bounds.width, height: height)
+        case BusinessOwnerSections.actionButtonCell.rawValue:
+            return CGSize(width: collectionView.bounds.width, height: 56)
+        default:
+            return CGSize.zero
         }
     }
 }

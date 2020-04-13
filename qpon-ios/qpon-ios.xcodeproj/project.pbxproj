@@ -42,8 +42,6 @@
 		A64E8D662440BCAB003356FE /* AddNewCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D642440BCAB003356FE /* AddNewCardCell.xib */; };
 		A64E8D692440FCAF003356FE /* BusinessOwnerSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D672440FCAF003356FE /* BusinessOwnerSearchCell.swift */; };
 		A64E8D6A2440FCAF003356FE /* BusinessOwnerSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D682440FCAF003356FE /* BusinessOwnerSearchCell.xib */; };
-		A64E8D6E24411414003356FE /* VoucherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D6C24411414003356FE /* VoucherCell.swift */; };
-		A64E8D6F24411414003356FE /* VoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D6D24411414003356FE /* VoucherCell.xib */; };
 		A64E8D722441147D003356FE /* VoucherCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D702441147D003356FE /* VoucherCollectionCell.swift */; };
 		A64E8D732441147D003356FE /* VoucherCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D712441147D003356FE /* VoucherCollectionCell.xib */; };
 		A64E8D762441C9A0003356FE /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D742441C9A0003356FE /* ProfileHeaderView.swift */; };
@@ -58,6 +56,8 @@
 		A64E8D8824426E3F003356FE /* BuyVouchersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D8624426E3F003356FE /* BuyVouchersCell.xib */; };
 		A64E8D8C24426E55003356FE /* ActionButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D8A24426E55003356FE /* ActionButtonCell.swift */; };
 		A64E8D8D24426E55003356FE /* ActionButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D8B24426E55003356FE /* ActionButtonCell.xib */; };
+		A64E8D95244322B8003356FE /* VoucherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E8D93244322B8003356FE /* VoucherCell.swift */; };
+		A64E8D96244322B8003356FE /* VoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64E8D94244322B8003356FE /* VoucherCell.xib */; };
 		A65783E02440B3A0005B9531 /* LeaderboardConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783DF2440B3A0005B9531 /* LeaderboardConfigurator.swift */; };
 		A65783E22440B3AA005B9531 /* LeaderBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783E12440B3AA005B9531 /* LeaderBoardRouter.swift */; };
 		A65783E42440B3B4005B9531 /* LeadreboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65783E32440B3B4005B9531 /* LeadreboardInteractor.swift */; };
@@ -144,8 +144,6 @@
 		A64E8D642440BCAB003356FE /* AddNewCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewCardCell.xib; sourceTree = "<group>"; };
 		A64E8D672440FCAF003356FE /* BusinessOwnerSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessOwnerSearchCell.swift; sourceTree = "<group>"; };
 		A64E8D682440FCAF003356FE /* BusinessOwnerSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessOwnerSearchCell.xib; sourceTree = "<group>"; };
-		A64E8D6C24411414003356FE /* VoucherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherCell.swift; sourceTree = "<group>"; };
-		A64E8D6D24411414003356FE /* VoucherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCell.xib; sourceTree = "<group>"; };
 		A64E8D702441147D003356FE /* VoucherCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherCollectionCell.swift; sourceTree = "<group>"; };
 		A64E8D712441147D003356FE /* VoucherCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCollectionCell.xib; sourceTree = "<group>"; };
 		A64E8D742441C9A0003356FE /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
@@ -160,6 +158,8 @@
 		A64E8D8624426E3F003356FE /* BuyVouchersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyVouchersCell.xib; sourceTree = "<group>"; };
 		A64E8D8A24426E55003356FE /* ActionButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonCell.swift; sourceTree = "<group>"; };
 		A64E8D8B24426E55003356FE /* ActionButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionButtonCell.xib; sourceTree = "<group>"; };
+		A64E8D93244322B8003356FE /* VoucherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherCell.swift; sourceTree = "<group>"; };
+		A64E8D94244322B8003356FE /* VoucherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCell.xib; sourceTree = "<group>"; };
 		A65783DF2440B3A0005B9531 /* LeaderboardConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardConfigurator.swift; sourceTree = "<group>"; };
 		A65783E12440B3AA005B9531 /* LeaderBoardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardRouter.swift; sourceTree = "<group>"; };
 		A65783E32440B3B4005B9531 /* LeadreboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadreboardInteractor.swift; sourceTree = "<group>"; };
@@ -394,8 +394,6 @@
 				A64E8D642440BCAB003356FE /* AddNewCardCell.xib */,
 				A64E8D702441147D003356FE /* VoucherCollectionCell.swift */,
 				A64E8D712441147D003356FE /* VoucherCollectionCell.xib */,
-				A64E8D6C24411414003356FE /* VoucherCell.swift */,
-				A64E8D6D24411414003356FE /* VoucherCell.xib */,
 				A64E8D742441C9A0003356FE /* ProfileHeaderView.swift */,
 				A64E8D752441C9A0003356FE /* ProfileHeaderView.xib */,
 			);
@@ -430,6 +428,8 @@
 				A64E8D8624426E3F003356FE /* BuyVouchersCell.xib */,
 				A64E8D8A24426E55003356FE /* ActionButtonCell.swift */,
 				A64E8D8B24426E55003356FE /* ActionButtonCell.xib */,
+				A64E8D93244322B8003356FE /* VoucherCell.swift */,
+				A64E8D94244322B8003356FE /* VoucherCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -591,9 +591,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A61A658F2439F0A400CD6D91 /* LoginViewController.xib in Resources */,
-				A64E8D6F24411414003356FE /* VoucherCell.xib in Resources */,
 				A64E8D592440B942003356FE /* ProfileInfoCell.xib in Resources */,
 				A64E8D772441C9A0003356FE /* ProfileHeaderView.xib in Resources */,
+				A64E8D96244322B8003356FE /* VoucherCell.xib in Resources */,
 				A66674272440736100B3C9AE /* HomeTabBarViewController.xib in Resources */,
 				A61A65852439EE1000CD6D91 /* LaunchScreen.storyboard in Resources */,
 				A61A65822439EE1000CD6D91 /* Assets.xcassets in Resources */,
@@ -745,7 +745,7 @@
 				A64E8D8724426E3F003356FE /* BuyVouchersCell.swift in Sources */,
 				A61A65EA243C916500CD6D91 /* RegistrationInteractor.swift in Sources */,
 				A666744C244076A500B3C9AE /* SearchPresenter.swift in Sources */,
-				A64E8D6E24411414003356FE /* VoucherCell.swift in Sources */,
+				A64E8D95244322B8003356FE /* VoucherCell.swift in Sources */,
 				A66674402440765900B3C9AE /* DashboardRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

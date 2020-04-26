@@ -37,9 +37,13 @@ class HomeTabBarViewController: UITabBarController {
     
     func setup(with selectedViewController: HomeTab = .dashboard) {
 
+        let logo = UIImage(named: "logo nav")
+        let imageView = UIImageView(image:logo)
+        
         let dashboardVC = DashboardViewController(nibName: "DashboardViewController", bundle: nil)
         let dashTabItem = UITabBarItem(title: "Начало", image: UIImage(named: "home"), tag: HomeTab.dashboard.rawValue)
         let dashboardNavVC = UINavigationController(rootViewController: dashboardVC)
+        dashboardVC.navigationItem.titleView = imageView
         dashboardNavVC.navigationBar.tintColor = UIColor.darkBlueColor()
         dashboardNavVC.tabBarItem = dashTabItem
 
@@ -52,6 +56,7 @@ class HomeTabBarViewController: UITabBarController {
         let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
         let profileTabItem = UITabBarItem(title: "Профил", image: UIImage(named: "profile"), tag: HomeTab.profile.rawValue)
         let profileNavVC = UINavigationController(rootViewController: profileVC)
+        profileVC.navigationItem.titleView = imageView
         profileNavVC.navigationBar.tintColor = UIColor.darkBlueColor()
         profileNavVC.tabBarItem = profileTabItem
         

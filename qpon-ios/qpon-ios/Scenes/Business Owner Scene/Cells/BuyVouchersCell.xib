@@ -24,7 +24,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ROf-Bv-dNC">
-                        <rect key="frame" x="0.0" y="56" width="375" height="270"/>
+                        <rect key="frame" x="8" y="56" width="359" height="270"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mk9-4c-2ot">
                             <size key="itemSize" width="50" height="50"/>
@@ -36,10 +36,10 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="ROf-Bv-dNC" secondAttribute="trailing" id="5dE-5t-8up"/>
+                <constraint firstAttribute="trailing" secondItem="ROf-Bv-dNC" secondAttribute="trailing" constant="8" id="5dE-5t-8up"/>
                 <constraint firstItem="USo-Yv-gL1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NgJ-xP-Jye"/>
                 <constraint firstItem="ROf-Bv-dNC" firstAttribute="top" secondItem="USo-Yv-gL1" secondAttribute="bottom" constant="15" id="X4i-NM-wzG"/>
-                <constraint firstItem="ROf-Bv-dNC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xfu-he-ZFy"/>
+                <constraint firstItem="ROf-Bv-dNC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Xfu-he-ZFy"/>
                 <constraint firstAttribute="bottom" secondItem="ROf-Bv-dNC" secondAttribute="bottom" id="a2T-jW-zAm"/>
                 <constraint firstAttribute="top" secondItem="USo-Yv-gL1" secondAttribute="top" constant="-20" id="x6M-xV-WgC"/>
             </constraints>

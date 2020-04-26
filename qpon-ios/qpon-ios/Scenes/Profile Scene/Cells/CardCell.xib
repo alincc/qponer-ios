@@ -17,21 +17,46 @@
                 <rect key="frame" x="0.0" y="0.0" width="385" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="карта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAf-rn-4s5">
-                        <rect key="frame" x="84" y="14.5" width="45" height="21"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="JL4-lI-O2C">
+                        <rect key="frame" x="17" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JL4-lI-O2C" secondAttribute="height" multiplier="1:1" id="Bqa-2f-Qt8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** **** **** 2453" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acP-Mg-TWb">
+                        <rect key="frame" x="98" y="14.5" width="143" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnd-C1-ggZ">
+                        <rect key="frame" x="343" y="10" width="30" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                        <state key="normal" title="..."/>
+                        <connections>
+                            <action selector="editButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="udY-xn-nVu"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="IAf-rn-4s5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="84" id="POd-EX-evg"/>
-                <constraint firstItem="IAf-rn-4s5" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="haE-On-M1B"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="vnd-C1-ggZ" secondAttribute="trailing" constant="12" id="1nm-9G-gFz"/>
+                <constraint firstItem="JL4-lI-O2C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9tH-GA-cXj"/>
+                <constraint firstItem="acP-Mg-TWb" firstAttribute="centerY" secondItem="JL4-lI-O2C" secondAttribute="centerY" id="AVq-Cd-0JS"/>
+                <constraint firstItem="vnd-C1-ggZ" firstAttribute="centerY" secondItem="acP-Mg-TWb" secondAttribute="centerY" id="Mr1-Mf-1LS"/>
+                <constraint firstAttribute="bottom" secondItem="JL4-lI-O2C" secondAttribute="bottom" id="TFP-hW-g4m"/>
+                <constraint firstItem="acP-Mg-TWb" firstAttribute="leading" secondItem="JL4-lI-O2C" secondAttribute="trailing" constant="31" id="y1F-YI-Cli"/>
+                <constraint firstItem="JL4-lI-O2C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="17" id="zIY-q4-Ybn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="385" height="50"/>
+            <connections>
+                <outlet property="cardNumberLabel" destination="acP-Mg-TWb" id="NoJ-yn-T8s"/>
+            </connections>
             <point key="canvasLocation" x="35.507246376811594" y="89.732142857142847"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="card" width="30" height="21.5"/>
+    </resources>
 </document>

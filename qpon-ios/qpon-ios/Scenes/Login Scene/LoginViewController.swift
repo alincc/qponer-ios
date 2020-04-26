@@ -24,6 +24,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             mailTextField.textContentType = .emailAddress
             mailTextField.delegate = self
             mailTextField.tag = TextFieldType.mail.rawValue
+            mailTextField.layer.borderColor = UIColor.darkBlueColor().cgColor
+            mailTextField.layer.borderWidth = 1.0
         }
     }
     
@@ -32,11 +34,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             passwordTextField.isSecureTextEntry = true
             passwordTextField.delegate = self
             passwordTextField.tag = TextFieldType.password.rawValue
+            passwordTextField.layer.borderColor = UIColor.darkBlueColor().cgColor
+            passwordTextField.layer.borderWidth = 1.0
         }
     }
     
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var resgisterButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton! {
+        didSet {
+            loginButton.backgroundColor = UIColor.darkBlueColor()
+        }
+    }
+    
+    @IBOutlet weak var resgisterButton: UIButton! {
+        didSet {
+            resgisterButton.titleLabel?.textColor = UIColor.darkBlueColor()
+        }
+    }
+    
     @IBOutlet weak var activityIndictaor: UIActivityIndicatorView!
     
     var presenter: LoginPresenterInput!
@@ -57,8 +71,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.dissmissKeyboardOnTap()
         self.resgisterButton.isHidden = true
         self.activityIndictaor.isHidden = true
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func validInpurFields() -> Bool {
@@ -125,6 +143,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.login()
         }
         return true
+    }
+    
+    // MARK: - Notifications
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
 }
 

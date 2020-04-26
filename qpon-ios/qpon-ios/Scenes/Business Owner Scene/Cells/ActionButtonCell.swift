@@ -22,7 +22,6 @@ class ActionButtonCell: UICollectionViewCell {
         super.awakeFromNib()
         self.button.layer.cornerRadius = 8
         self.button.backgroundColor = UIColor.darkBlueColor()
-        // Initialization code
     }
     
     @IBAction func didTapButton(_ sender: Any) {

@@ -8,10 +8,16 @@
 
 import UIKit
 
+protocol BuyVouchersCellDelegate {
+    func buyVouchersCellDidSelectVoucher(_ sender: BuyVouchersCell, voucherIndex: Int)
+}
+
 class BuyVouchersCell: UICollectionViewCell {
 
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var delegate: BuyVouchersCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +30,7 @@ class BuyVouchersCell: UICollectionViewCell {
 }
 
 extension BuyVouchersCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
@@ -45,5 +52,9 @@ extension BuyVouchersCell: UICollectionViewDataSource, UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.buyVouchersCellDidSelectVoucher(self, voucherIndex: indexPath.item)
     }
 }

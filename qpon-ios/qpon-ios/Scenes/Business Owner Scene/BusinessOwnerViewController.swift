@@ -14,7 +14,7 @@ protocol BusinessOwnerViewControllerInput: class {
 }
 
 
-class BusinessOwnerViewController: UIViewController, ActionButtonCellDelegate {
+class BusinessOwnerViewController: UIViewController, ActionButtonCellDelegate, BuyVouchersCellDelegate {
     
     enum BusinessOwnerSections: Int {
         case infoCell
@@ -58,6 +58,14 @@ class BusinessOwnerViewController: UIViewController, ActionButtonCellDelegate {
     func didTapActionButton(_ sender: ActionButtonCell) {
         
     }
+    
+    // MARK: - BuyVouchersCellDelegate
+    
+    func buyVouchersCellDidSelectVoucher(_ sender: BuyVouchersCell, voucherIndex: Int) {
+        let actionIndexPath = IndexPath(item: 0, section: BusinessOwnerSections.actionButtonCell.rawValue)
+        let actionCell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "ActionButtonCell", for: actionIndexPath) as? ActionButtonCell
+        actionCell?.button.isEnabled = true
+    }
 
 }
 
@@ -78,9 +86,11 @@ extension BusinessOwnerViewController: UICollectionViewDataSource, UICollectionV
             return cell
         case BusinessOwnerSections.vouchersCell.rawValue:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BuyVouchersCell", for: indexPath) as! BuyVouchersCell
+            cell.delegate = self
             return cell
         case BusinessOwnerSections.actionButtonCell.rawValue:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActionButtonCell", for: indexPath) as! ActionButtonCell
+            cell.button.isEnabled = false
             cell.delegate = self
             return cell
         default:

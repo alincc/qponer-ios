@@ -10,9 +10,12 @@ import UIKit
 
 class CardCell: UICollectionViewCell {
 
+    @IBOutlet weak var cardNumberLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
+    @IBAction func editButtonTapped(_ sender: Any) {
+    }
 }
